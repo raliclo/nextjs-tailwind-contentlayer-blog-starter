@@ -43,7 +43,7 @@ const SocialIcon = ({ kind, href }: Props) => {
       <span className="sr-only">{kind}</span>
       <SocialSvg
         className={clsx(
-          'h-6 w-6 fill-current text-gray-700 transition-colors dark:text-gray-200',
+          'size-6 fill-current text-gray-700 transition-colors dark:text-gray-200',
           kind === 'mail' &&
             'hover:text-primary-600 dark:hover:text-primary-400',
           kind === 'github' && 'hover:text-gray-500 dark:hover:text-gray-400',

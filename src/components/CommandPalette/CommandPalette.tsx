@@ -43,7 +43,7 @@ export default function CommandPalette({ children }: Props) {
       name: t('home'),
       keywords: 'home homepage index 首頁',
       perform: () => router.push('/'),
-      icon: <HomeIcon className="h-6 w-6" />,
+      icon: <HomeIcon className="size-6" />,
       section: {
         name: t('page'),
         priority: Priority.HIGH,
@@ -56,7 +56,7 @@ export default function CommandPalette({ children }: Props) {
       name: t('posts'),
       keywords:
         'search find posts writing words blog articles thoughts 搜尋 尋找 文章 寫作 部落格',
-      icon: <MagnifyingGlassIcon className="h-6 w-6" />,
+      icon: <MagnifyingGlassIcon className="size-6" />,
       section: t('search'),
     },
     // Operation section
@@ -65,7 +65,7 @@ export default function CommandPalette({ children }: Props) {
       id: 'theme',
       name: t('toggle-theme'),
       keywords: 'change toggle theme mode color 切換 更換 顏色 主題 模式',
-      icon: <LightBulbIcon className="h-6 w-6" />,
+      icon: <LightBulbIcon className="size-6" />,
       section: t('operation'),
     },
     {
@@ -73,7 +73,7 @@ export default function CommandPalette({ children }: Props) {
       name: t('light-mode'),
       keywords: 'theme light white mode color 顏色 主題 模式 明亮 白色',
       perform: () => setTheme('light'),
-      icon: <SunIcon className="h-6 w-6" />,
+      icon: <SunIcon className="size-6" />,
       parent: 'theme',
       section: t('operation'),
     },
@@ -82,7 +82,7 @@ export default function CommandPalette({ children }: Props) {
       name: t('dark-mode'),
       keywords: 'theme dark black mode color 顏色 主題 模式 暗黑 黑色 深夜',
       perform: () => setTheme('dark'),
-      icon: <MoonIcon className="h-6 w-6" />,
+      icon: <MoonIcon className="size-6" />,
       parent: 'theme',
       section: t('operation'),
     },
@@ -92,7 +92,7 @@ export default function CommandPalette({ children }: Props) {
       name: t('toggle-language'),
       keywords:
         'change toggle locale language translation 切換 更換 語言 語系 翻譯',
-      icon: <LanguageIcon className="h-6 w-6" />,
+      icon: <LanguageIcon className="size-6" />,
       section: t('operation'),
     },
   ];
@@ -126,7 +126,7 @@ function RenderResults() {
       items={results}
       onRender={({ item, active }) =>
         typeof item === 'string' ? (
-          <div className="px-4 pt-4 pb-2 font-medium text-gray-500 dark:text-gray-400">
+          <div className="px-4 pb-2 pt-4 font-medium text-gray-500 dark:text-gray-400">
             {item}
           </div>
         ) : (

@@ -25,7 +25,7 @@ const MobileNav = () => {
     <div className="sm:hidden">
       <button
         type="button"
-        className="h-10 w-10 rounded p-2 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 sm:h-12 sm:w-12 sm:p-3"
+        className="size-10 rounded p-2 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 sm:size-12 sm:p-3"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
@@ -52,11 +52,11 @@ const MobileNav = () => {
       </button>
 
       <div
-        className={`fixed top-16 right-0 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-800/90 ${
+        className={`fixed right-0 top-16 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-800/90 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <nav className="mt-8 h-full w-full">
+        <nav className="mt-8 size-full">
           {headerConfigs.navLinks.map((link) => (
             <CustomLink
               href={link.href}
