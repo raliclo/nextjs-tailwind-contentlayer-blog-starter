@@ -7,7 +7,6 @@ const { i18n } = i18nConfig;
 /** @type {import('next').NextConfig} */
 const nextConfig = withContentlayer({
   reactStrictMode: true,
-  swcMinify: true,
   // Support svg import
   // ref: https://dev.to/dolearning/importing-svgs-to-next-js-nna
   webpack: (config) => {
