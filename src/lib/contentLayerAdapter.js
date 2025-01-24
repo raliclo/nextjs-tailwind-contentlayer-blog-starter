@@ -3,7 +3,7 @@ import {
   defineDocumentType,
   defineNestedType,
   makeSource,
-} from 'contentlayer/source-files';
+} from 'contentlayer2/source-files';
 import { compareDesc } from 'date-fns';
 
 export { allPosts, defineDocumentType, defineNestedType, makeSource, Post };
