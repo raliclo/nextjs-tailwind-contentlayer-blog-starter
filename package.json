@@ -20,7 +20,7 @@
     "github-slugger": "^1.4.0",
     "image-size": "^1.0.2",
     "kbar": "0.1.0-beta.45",
-    "next": "^13.5.8",
+    "next": "^14",
     "next-contentlayer2": "^0.4.6",
     "next-i18next": "^12.1.0",
     "next-seo": "^5.5.0",
